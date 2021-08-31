@@ -1,0 +1,119 @@
+/*==============dashboard page===============*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: rgb(230, 22, 22);
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+a:hover{
+    text-decoration: none;
+}
+.bg-red{
+    background-color: rgb(230, 22, 22);
+}
+.bg-black{
+    background-color: #000;
+    color: #fff !important;
+}
+.mybtn{
+    background-color: rgb(230, 22, 22);
+    color: #fff;
+    border: 0;
+}
+.mybtn:hover{
+    background-color: #fff;
+    color: rgb(230, 22, 22);
+    border: 1px solid rgb(230, 22, 22);
+}
+#sidebar-container{
+    min-height: 100vh;
+    margin-left: -18rem;
+    transition: margin 0.25s ease-in-out;
+}
+#sidebar-container .logo{
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+#sidebar-container .menu{
+    width: 18rem;
+    padding: 100px 0;
+}
+.avatar{
+    max-width: 35px;
+}
+.bg-mix{
+    background: linear-gradient(180deg, #fff 50%, rgba(230, 22, 22, 0.61) 0);
+}
+#content-wrapper.toggle #sidebar-container{
+    margin-left: 0;
+}
+#content-wrapper.toggle .fa-arrow-right{
+    transform: rotate(180deg);
+}
+.shadow-sm{
+    box-shadow: 0 0 1.25rem #ccc;
+}
+.shadow-hover{
+    transition: 1s ease-in-out;
+}
+.shadow-hover:hover{
+    transition: 1s ease-in-out;
+    box-shadow: 0 0.5rem 1rem rgba(230, 22, 22, 0.61);
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(230, 22, 22);
+}
+table{
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+}
+table tbody tr{
+    background: #fff;
+}
+table thead th{
+    border: 0 !important;
+}
+table tbody td{
+    border-top: 0 !important;
+    line-height: 1.2;
+}
+.scroll-card{
+    overflow-y: auto;
+    height: 250px;
+}
+#films table thead th{
+    text-transform: capitalize;
+}
+#films h5{
+    color: rgb(230, 22, 22);
+}
+#films .img-film{
+    max-width: 80px;
+    max-height: 80px;
+}
+@media (max-width:768px){
+    #sidebar-container{
+        margin-left: 0;
+    }
+    #page-container{
+        min-width: 0;
+        width: 100%;
+    }
+    #content-wrapper.toggle #sidebar-container{
+        margin-left: -18rem;
+    }
+    .border-right{
+        border: 0 !important;
+    }
+}
+
+/*==============dashboard page===============*/
